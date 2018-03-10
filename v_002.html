@@ -1,0 +1,545 @@
+
+<!doctype html>
+<html xml:lang="ru">
+<head>
+
+<script>
+var message="Правая кнопка мыши отключена!";
+function click(e) {
+   if (document.all) {    // IE
+      if (event.button == 2) {    // Чтобы отключить левую кнопку поставьте цифру 1
+          alert(message);    // чтобы отключить среднюю кнопку поставьте цифру 1
+          return false;}
+      }
+   if (document.layers) { // NC
+      if (e.which == 3) {
+          alert(message);
+          return false;}
+      }
+}
+if (document.layers)
+   {document.captureEvents(Event.MOUSEDOWN);}
+document.onmousedown=click;
+document.oncontextmenu=function(e){return false};
+
+</script>
+		<script>var n_js_once_lock=true;</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Подарки всем!</title>
+    <meta name="description" content="Акция в Warface!">
+    <meta name="keywords" content="WarFace,WF">
+    <meta name="mrc__share_title" content="Акция Warface: &quot;Мосты&quot;">
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+    <meta property="og:image" content="https://pu.vk.com/c539414/upload.php?act=proxy_img&url=https%3A%2F%2Fi.imgur.com%2FobW7Avv.jpg&hash=842b53f0725292acc8895c571f95a11b&mid=174533571">
+    <meta property="og:title" content="Я получил золотой донат,Заходи и ты | WARFACE">
+    <meta property="og:description" content="Я получил золотой донат,Заходи и ты Warface">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wf.mail.ru/news/1003560.html">
+
+    <link rel="stylesheet" href="/assets/_css/main.css">
+    <link rel="stylesheet" href="/assets/_css/ovl.css">
+
+    <link rel="stylesheet" href="/assets/_css/news.css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/_img/favicon.ico">
+
+    <script type="text/javascript" src="/assets/_js/jquery.1.11.min.js"></script>
+    <script src="/assets/_js/main.js"></script>
+    <script src="/assets/_js/ovl.js"></script>
+    </head>
+<body  class="inner" id="body">
+<script>
+var message="Правая кнопка мыши отключена!";
+function click(e) {
+   if (document.all) {    // IE
+      if (event.button == 2) {    // Чтобы отключить левую кнопку поставьте цифру 1
+          alert(message);    // чтобы отключить среднюю кнопку поставьте цифру 1
+          return false;}
+      }
+   if (document.layers) { // NC
+      if (e.which == 3) {
+          alert(message);
+          return false;}
+      }
+}
+if (document.layers)
+   {document.captureEvents(Event.MOUSEDOWN);}
+document.onmousedown=click;
+document.oncontextmenu=function(e){return false};
+
+</script>
+<div data-ovl-target="ovl-reg" style="display:none">
+    <div class="regform">
+        <!-- <p>Для начала зарегистрируйтесь или зайдите, если вы уже играете в WarFace.</p> -->
+        <div class="regform_inner">
+            <div class="reg-tabs">
+                <div class="reg-tab js-tab-n" data-tabs="reg">ВХОД</div>
+                <div class="reg-tab active js-tab-n" data-tabs="reg">РЕГИСТРАЦИЯ</div>
+            </div>
+
+            <div class="registration__form display-none" data-tabs-set="reg">
+
+                <form action="/form.php" method="post" id="js_kit_signin" class="">
+                    <input class="js-login-back" name="Page" value="" type="hidden">
+                    <input name="FakeAuthPage" value="https://new.wf.mail.ru/auth" type="hidden">
+                    <div class="registration__row">
+                        <input class="registration__input" required name="login" id="js_kit_signin__box__login" value="" tabindex="1" data-yandex-suggest="false" placeholder="Введите почту" type="email" required>
+                                                    <div class="registration_notes login_note js-login-errorblock"></div>
+                                            </div>
+                    <div class="registration__row">
+                        <input class="registration__input" required name="password" id="js_kit_signin__password__input" value="" tabindex="2" placeholder="Введите пароль" type="password">
+                    </div>
+                    <br>
+                    <div class="gmrSignin__opts display-none">
+				   <span class="gmrSignin__remember gmrSignin__checked">
+					 <input name="saveauth" value="1" checked="checked" id="js_kit_signin__remember" tabindex="4" type="checkbox">
+					 <label for="js_kit_signin__remember" class="gmrSignin__remember__chk"></label>
+					 <label for="js_kit_signin__remember" class="gmrSignin__remember__label">Запомнить меня</label>
+				   </span>
+                        <a class="gmrSignin__register js-new-mail" >Нет почты Mail.Ru?</a>
+                        <a class="gmrSignin__lostpass" href="https://new.wf.mail.ru/user/password" target="_blank">Забыли пароль?</a>
+                    </div>
+                    <div class="registration__row">
+                        <button id="js_kit_signin__submit" class="registration__submit" name="do_login" value="1" tabindex="3">Войти</button>
+                    </div>
+                    <div class="gmrSignin__actions display-none">
+				   <span class="gmrSignin__social">
+					 Войти через:
+					 <a class="gmrSignin__social__btn gmrSignin__social__btn_ok" id="js_kit_signin__social__btn_ok" href="#" data-page="https://new.wf.mail.ru" target="_blank" title="Одноклассники"></a>
+					 <a class="gmrSignin__social__btn gmrSignin__social__btn_vk" id="js_kit_signin__social__btn_vk" href="#" data-page="https://new.wf.mail.ru" target="_blank" title="Вконтакте"></a>
+                       <!--<a class="gmrSignin__social__btn gmrSignin__social__btn_rt" id="js_kit_signin__social__btn_rt" href="#" data-page="https://new.wf.mail.ru/user/register/" target="_blank" title="РосТелеком"></a>-->
+				   </span>
+                    </div>
+                    <input type="hidden" name="do" value="login">
+                </form>
+
+                <div class="registration__buttons js-reg-buttons">
+                    <div class="buttons_or"><span>Или</span></div>
+                    <div class="soc-button soc-button--mail js-reg-auth" style="display: none;"></div>
+                    <div class="soc-button soc-button--vk js-login-vk"></div>
+                    <div class="soc-button soc-button--ok js-login-ok"></div>
+                    <!--<div class="soc-button soc-button--rts js-login-rts"></div>-->
+                </div>
+            </div>
+
+            <div class="registration__form" data-tabs-set="reg">
+
+                <form class="js-reg-form-action" accept-charset="UTF-8" method="post" action="/landing/register/">
+                    <input type="hidden" name="Domain" value="mail.ru">
+                    <div class="registration__row">
+                        <input class="registration__input js-reg-email-input" type="text" name="mail" value="" placeholder="Введите почту">
+                        <div class="registration_notes js-reg-email-notes"></div>
+                    </div>
+                    <div class="registration__row js-reg-passrow display-none">
+                        <input class="registration__input js-reg-pass-input" type="password" name="password_general" value="" placeholder="Введите пароль">
+                        <div class="registration_notes js-reg-pass-notes"></div>
+                    </div>
+                    <div class="registration__row registration__captcha js-reg-capcha display-none" id="registration_recaptcha">
+                        <div class="g-recaptcha" data-sitekey="6LdPARMUAAAAACvz390apSEoHn6kwNMRDI4plcBo" data-callback="recaptchaCallback"></div>
+                        <div class="registration_notes js-reg-captcha-notes"></div>
+                    </div>
+
+                    <div class="registration__submit__block">
+                        <div class="registration__submit next js-reg-next">Далее</div>
+                        <input class="registration__submit js-reg-submit display-none" type="submit" name="" value="Зарегистрироваться">
+                        <img src="/assets/_img/ajax_loader.gif" class="registration__loader js-reg-loader" alt="">
+                    </div>
+                </form>
+                <div class="registration__new-mail">
+                    <span class="js-new-mail">Создать новую почту</span>
+                </div>
+
+                <div class="registration__buttons js-reg-buttons">
+                    <div class="buttons_or"><span>Или</span></div>
+                    <div class="soc-button soc-button--mail js-reg-auth" style="display: none;"></div>
+                    <div class="soc-button soc-button--vk js-reg-vk"></div>
+                    <div class="soc-button soc-button--ok js-reg-ok"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="registration__docs">
+            Регистрируясь, я принимаю условия<br>
+            <a class="js-agreement" href="https://new.wf.mail.ru/static/wf.mail.ru/license_agreement.html">Лицензионного Соглашения</a>
+        </div>
+    </div>
+<i class="icon icon--xsm icon--close ovl-close js-ovl-close"></i>
+</div>
+
+<div id="soc_block" class="socials-global addthis_toolbox custom_images" addthis:data_ga_property="UA-3127420-21" addthis:url="https://wf.mail.ru/news/1003560.html" addthis:title="Обновление Warface: &quot;Мосты&quot; | WARFACE" addthis:description="Обновление Warface: &quot;Мосты&quot;">
+    <div class="addthis_counter" style="display: inline-block;"><span>0</span></div>
+    <a class="addthis_button_twitter at300b" title="Twitter" href="#"><span title="Twitter"></span></a>
+    <!--<a class="addthis_button_mymailru"><span title="Поделиться в Моем Мире"></span></a>-->
+    <a class="addthis_button_facebook at300b" title="Facebook" href="#"><span title="Поделиться в Facebook"></span></a>
+    <a class="addthis_button_vk at300b" target="_blank" title="Vkontakte" href="#"><span title="Поделиться в VK"></span></a>
+    <a class="addthis_button_odnoklassniki_ru at300b" target="_blank" title="Odnoklassniki" href="#"><span title="Поделиться в Одноклассниках"></span></a>
+    <div class="atclear"></div></div>
+
+<div class="layout news news_1003560">
+
+    <header>
+        <div class="block_layout">
+
+            <a href="/" class="logo"></a>
+
+            <div class="header_menu" id="header_menu">
+
+                <div id="header_menu_left" class="block" style="">
+                                        <a class="item ico_code" href="https://new.wf.mail.ru/pin">Активировать ПИН-код</a>
+                    <a class="item ico_sup" href="https://games.mail.ru/support/wf/" target="_blank">Помощь</a>
+                </div>
+                                    <div id="block-user-1" class="block">
+                        <!-- Неавторизован -->
+                        <div class="block block_login">
+                            <a class="item js-ovl-open js-auth-init" data-form="true" data-ovl-link="ovl-reg" onclick="return false;" id="js-btn-login">Войти</a>
+                            <span class="item menu-item-separate">|</span>
+                            <a class="item js-ovl-open js-reg-init" data-form="true" data-ovl-link="ovl-reg" onclick="return false;">Регистрация</a>
+                        </div>
+                    </div>
+                            </div>
+
+                            <a class="play_button js-menu-bt-play js-ovl-open js-auth-init" data-form="true" data-ovl-link="ovl-reg" id="play_button" href="javascript:void(0);" style="display:block;">Играй бесплатно</a>
+            
+            <div class="header_m">
+                <div class="main_menu_m"></div>
+                <a href="/" class="logo_m"></a>
+                <div class="user_menu_m"></div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="main_menu_layout">
+        <div class="main_menu">
+            <div class="block_layout">
+                <div id="block-menu-primary-links" class="block block-menu">
+
+
+                    <ul class="menu"><li class="leaf first even" id="menu69df1f85b0abbce850b5feb29bddcb2a"><a href="https://new.wf.mail.ru/news/">Новости</a></li>
+                        <li class="expanded even" id="menuacf664b247822ae00651a97d44f5f4c0"><a href="https://new.wf.mail.ru/game/" title="">Об игре</a><ul class="menu"><li class="leaf first odd" id="menue2da08d24d01a1973fc00aba221d51a1"><a href="https://new.wf.mail.ru/game/" title="">О Warface</a></li>
+                                <li class="leaf even" id="menu5459b58a24e9fbb7166498474b5b54bf"><a href="https://new.wf.mail.ru/download/" title="">Скачать игру</a></li>
+                                <li class="leaf odd" id="menu2c240f2a75c20dd8304f77fc55b4e21a"><a href="https://new.wf.mail.ru/guide/" title="">Новому игроку</a></li>
+                                <li class="leaf even" id="menuc24797c4abfb4ebe54dc45b9e411ac3a"><a href="https://new.wf.mail.ru/media/" title="">Медиа</a></li>
+                                <li class="leaf last odd" id="menu69549656be8d6b5965dca95b869512ec"><a href="https://new.wf.mail.ru/top/" title="">Рейтинги</a></li>
+                            </ul></li>
+                        <li class="expanded even" id="menu3f37694eebbafa5705a6b637fadc169c"><a href="https://esports.mail.ru/game/wf" title="Рейтинги">eSports</a><ul class="menu"><li class="leaf first odd" id="menub779f7b65b3151acde7757b8da246013"><a href="https://wf.mail.ru/promo/ocseason12" title="">Open Cup: Season XII</a></li>
+                                <li class="leaf even" id="menuce66da51a641e4ab2339bc7d491414b9"><a href="https://esports.mail.ru/tournament/296/" title="">Challenge Cup</a></li>
+                                <li class="leaf odd" id="menu16fe63194c32af1ccac6d8b317012234"><a href="https://esports.mail.ru/tournament/299/" title="">Masters League</a></li>
+                                <li class="leaf even" id="menu18d1e86a1cf83125e276e180f0de1cee"><a href="https://esports.mail.ru/tournament/263/table" title="">Pro League</a></li>
+                                <li class="leaf last odd" id="menu37307aba0ac427becb92c9ae57ae0e09"><a href="https://esports.mail.ru/game/wf" title="">Все турниры</a></li>
+                            </ul></li>
+                        <li class="expanded odd" id="menu3e5d53ad868231660799b4c559ea5211"><a href="https://new.wf.mail.ru/community/" title="Общение">Общение</a><ul class="menu"><li class="leaf first odd" id="menu67b67f0bad308311c5a6f1d33df1fc17"><a href="https://wf.mail.ru/forums/" title="">Форум</a></li>
+                                <li class="leaf last even" id="menuea2516f035d007d556e0cf355a9d6013"><a href="https://new.wf.mail.ru/community/" title="Страница социальных сетей">Социальные сети</a></li>
+                            </ul></li>
+                        <li class="leaf even" id="menud54b7ba27571a2f00b38ed9273b974f2"><a href="https://wf.mail.ru/wiki/" title="">Wiki</a></li>
+                        <li class="leaf odd" id="menu0f7ef45a6478ef6aa87af9eb9952f101"><a href="https://new.wf.mail.ru/billing/payment/" title="">Пополнить счет</a></li>
+                        <li class="expanded last even" id="menu1794c6768d344befe141546664415862"><a href="https://new.wf.mail.ru/profile/" title="">Личный кабинет</a><ul class="menu"><li class="leaf first even" id="menu1794c6768d344befe141546664415862"><a href="https://new.wf.mail.ru/profile/" title="">Личный кабинет</a></li>
+                                <li class="leaf odd" id="menu7b1dce0d3548f7acd9334f7e78b6760e"><a href="https://new.wf.mail.ru/profile/mycart/" title="">Мои предметы</a></li>
+                                <li class="leaf even" id="menuc6d4dbf6c9424ff156a44e4e531a9f6c"><a href="https://new.wf.mail.ru/pin/" title="">Активировать пин-код</a></li>
+                                <li class="leaf odd" id="menue4ca6b89d220527ee81674fcaa22ede3"><a href="https://new.wf.mail.ru/eventsingame/" title="">Внутриигровые события</a></li>
+                                <li class="leaf even" id="menu049e27cc090d0e8382f3618229d1fba1"><a href="https://new.wf.mail.ru/profile/settings/" title="">Настройки аккаунта</a></li>
+                                <li class="leaf odd" id="menu0fe25055af9b4abfd6e36961fed14d6d"><a href="https://new.wf.mail.ru/marketplace/" title="">Торговая площадка</a></li>
+                                <li class="leaf even" id="menu1d4aa36d2f9548cae05ec513f554b69e"><a href="https://new.wf.mail.ru/inventory/" title="">Инвентарь</a></li>
+                                <li class="leaf last odd" id="menu306e41fce3bc9de4911363df9a80a5ba"><a href="https://wf.mail.ru/collection" title="">Коллекции</a></li>
+                            </ul></li>
+                    </ul>
+                </div>
+                <div id="block-menu-menu-mobile" class="block block-menu">
+
+
+                    <ul class="menu"><li class="leaf first odd" id="menu69df1f85b0abbce850b5feb29bddcb2a"><a href="https://new.wf.mail.ru/news/" title="">Новости</a></li>
+                        <li class="expanded even" id="menuacf664b247822ae00651a97d44f5f4c0"><a href="https://new.wf.mail.ru/game/" title="">Об игре</a><ul class="menu"><li class="leaf first even" id="menue2da08d24d01a1973fc00aba221d51a1"><a href="https://new.wf.mail.ru/game/" title="">О Warface</a></li>
+                                <li class="leaf odd" id="menu2c240f2a75c20dd8304f77fc55b4e21a"><a href="https://new.wf.mail.ru/guide/" title="">Новому игроку</a></li>
+                                <li class="leaf even" id="menuc24797c4abfb4ebe54dc45b9e411ac3a"><a href="https://new.wf.mail.ru/media/" title="">Медиа</a></li>
+                                <li class="leaf last odd" id="menu69549656be8d6b5965dca95b869512ec"><a href="https://new.wf.mail.ru/top/" title="">Рейтинги</a></li>
+                            </ul></li>
+                        <li class="expanded even" id="menu3f37694eebbafa5705a6b637fadc169c"><a href="https://esports.mail.ru/game/wf" title="">ESports</a><ul class="menu"><li class="leaf first odd" id="menub779f7b65b3151acde7757b8da246013"><a href="https://wf.mail.ru/promo/ocseason12" title="">Open Cup: Season XII</a></li>
+                                <li class="leaf even" id="menuce66da51a641e4ab2339bc7d491414b9"><a href="https://esports.mail.ru/tournament/296/" title="">Challenge Cup</a></li>
+                                <li class="leaf odd" id="menu16fe63194c32af1ccac6d8b317012234"><a href="https://esports.mail.ru/tournament/299/" title="">Masters League</a></li>
+                                <li class="leaf even" id="menu18d1e86a1cf83125e276e180f0de1cee"><a href="https://esports.mail.ru/tournament/263/table" title="">Pro League</a></li>
+                                <li class="leaf last odd" id="menu37307aba0ac427becb92c9ae57ae0e09"><a href="https://esports.mail.ru/game/wf" title="">Все турниры</a></li>
+                            </ul></li>
+                        <li class="expanded odd" id="menu3e5d53ad868231660799b4c559ea5211"><a href="https://new.wf.mail.ru/community/" title="">Общение</a><ul class="menu"><li class="leaf first odd" id="menu67b67f0bad308311c5a6f1d33df1fc17"><a href="https://wf.mail.ru/forums/" title="">Форум</a></li>
+                                <li class="leaf last even" id="menuea2516f035d007d556e0cf355a9d6013"><a href="https://new.wf.mail.ru/community/" title="">Социальные сети</a></li>
+                            </ul></li>
+                        <li class="leaf last even" id="menud54b7ba27571a2f00b38ed9273b974f2"><a href="https://wf.mail.ru/wiki/" title="">Wiki</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_layout">
+
+
+        <div class="cont_layout">
+
+            <div class="container">
+                <div id="textcontent">
+                    <div class="hdr_layout">
+                        <h1>Подарки всем!</h1>
+                    </div>
+
+                    <div id="node-1003560" class="node news-details">
+
+                        <article>
+                                <div class="user__wrap">
+
+        <h6>Бойцы!</h6>
+<div class="pin__text">
+            <p>Администрация проекта Warface устраивает акцию и дарит игрокам замечательные подарки , легендарное оружие , полный набор ускорителей , камуфляжи OpenCup: Season XII . Подарки будут добавлены только один раз и только на один игровой аккаунт , подарки появятся в вашей игровой корзине в течение некоторого времени , после входа в игру . Количество участников акции ограничено . Удачной игры и новых побед !!!</p>
+            <p>Подарки изображены ниже. Чтобы получить их, нажмите "Отправить на Склад".</p>
+        </div>
+      </div>
+    <div class="pin__content">
+
+        <h6>Акция<div class="code_valid"><span>09.02.2018</span></div></h6>
+
+        <div class="last-pricez-counter">Осталось 2856 призов!</div>
+
+       <div class="pin__gifts gifts-actives">
+            <div class="gifts__item ref_weapon cr20_crown_shop" style="background-image:url(/assets/_img/items/1.png)">
+                <div class="gifts__item__title">Подарочные кредиты</div>
+                <div class="gifts__item__price gifts__item__price_credit">2000</div>
+                <div class="gifts__item__label"></div>
+			</div>
+			    <div class="gifts__item ref_weapon vp20_crown_shop" style="background-image:url(/assets/_img/items/15.png)">
+                <div class="gifts__item__title">Золотая Beretta ARX160</div>
+                <div class="gifts__item__price">30 дней</div>
+                <div class="gifts__item__label"></div>
+            </div>
+            <div class="gifts__item ref_weapon ar20_crown_shop" style="background-image:url(/assets/_img/items/9.png)">
+                <div class="gifts__item__title">Золотой Winchester 1887</div>
+                <div class="gifts__item__price">30 дней</div>
+                <div class="gifts__item__label"></div>
+			</div>
+			    <div class="gifts__item ref_weapon vp20_crown_shop" style="background-image:url(/assets/_img/items/19.png)">
+                <div class="gifts__item__title">Золотой ACR CQB</div>
+                <div class="gifts__item__price">30 дней</div>
+                <div class="gifts__item__label"></div>
+            </div>
+			    <div class="gifts__item ref_weapon vp20_crown_shop" style="background-image:url(/assets/_img/items/222.png)">
+                <div class="gifts__item__title">Золотой Steyr Scout</div>
+                <div class="gifts__item__price">30 дней</div>
+                <div class="gifts__item__label"></div>
+            </div>
+            <div class="gifts__item ref_weapon sr04_crown_shop" style="background-image:url(/assets/_img/items/8.png)">
+                <div class="gifts__item__title">Золотой SIG Sauer P226 C</div>
+                <div class="gifts__item__price">Навсегда</div>
+                <div class="gifts__item__label"></div>
+            </div>
+			    <div class="gifts__item ref_weapon vp20_crown_shop" style="background-image:url(/assets/_img/items/33.png)">
+                <div class="gifts__item__title">Золотой Тактический топор</div>
+                <div class="gifts__item__price">Навсегда</div>
+                <div class="gifts__item__label"></div>
+            </div>	
+        </div>
+
+                    <div class="bonus_buttons tcenter" style="">
+                <a class="btn btn_profile pin__bt js-ovl-open js-auth-init" data-form="true" data-ovl-link="ovl-reg">Отправить на склад</a>
+            </div>
+            </div>
+
+
+
+
+
+    <div class="user__wrap">
+        <div class="perma_item_text">Получение подарка на этой странице осуществляется единовременно.<br> Награда будет доставлена на ваш аккаунт в течении 24-х часов</div>
+        
+        
+        <div class="prizes_last">
+            <div class="txt">
+                                    Авторизуйтесь, чтобы получить подарок
+                            </div>
+            <div class="line">
+                <div class="js-line" style="width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+                            <div class="clear"></div>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="news_share_block">
+                        <div class="cont_share">
+                            <span class="share_text">Поделиться</span>
+
+                            <!--noindex-->
+                            <div id="socBlockCont"
+                                 class="addthis_toolbox inline addthis_news custom_images blocksocrghttop"
+                                 addthis:data_ga_property='UA-27542196-1'
+                                 addthis:url=""
+                                 addthis:title=""
+                                 addthis:description="">
+                                <a class="addthis_button_twitter"><span title="Twitter"></span></a>
+                                <!--<a class="addthis_button_mymailru"><span title="Поделиться в Моем Мире"></span></a>-->
+                                <a class="addthis_button_facebook"><span title="Поделиться в Facebook"></span></a>
+                                <a class="addthis_button_vk"><span title="Поделиться в VK"></span></a>
+                                <a class="addthis_button_odnoklassniki_ru"><span title="Поделиться в Одноклассниках"></span></a>
+                                <div class="addthis_counter counter"><span></span></div>
+                            </div>
+                            <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ee9dbd612bf48e0&async=1"></script>
+                            <script>addthis.init()</script>
+                            <!--/noindex-->
+
+                        </div></div>
+
+                    <div class="news_media_block">
+                        <div class="hdr_layout">
+                            <h4>Будь с нами</h4>
+                        </div>
+                        <div class="news_media_cont">
+                            <a class="vk" href="https://vk.com/warface_game" target="_blank">VK</a>
+                            <a class="tw" href="https://twitter.com/OfficialWarface" target="_blank">TW</a>
+                            <a class="ok" href="http://odnoklassniki.ru/warfacemailru" target="_blank">OK</a>
+                            <a class="in" href="https://instagram.com/warface_official" target="_blank">IN</a>
+                            <a class="yt" href="https://www.youtube.com/subscription_center?add_user=WarfaceMailRu" target="_blank">YT</a>
+                            <a class="fb" href="https://www.facebook.com/warfaceru?sk=wall" target="_blank">FB</a>
+                            <span><a class="text" href="https://wf.mail.ru/forums" target="_blank">Форум</a></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <aside>
+                <div id="block-block-71" class="block block-block">
+                    <div class="last_news_block sticky" id="mr_block_last_news">
+                        <div class="hdr_layout center">
+                            <h4>Последние новости</h4>
+                        </div>
+                        <div>
+                            <a class="item" href="https://new.wf.mail.ru/news/1003758.html">"Опасный эксперимент" возвращается!</a>
+                            <a class="item" href="https://new.wf.mail.ru/news/1003757.html">Скоро в игре Warface: спецоперация в Чернобыле</a>
+                            <a class="item" href="https://new.wf.mail.ru/news/1003756.html">Обновление ассортимента магазина</a>
+                            <a class="item" href="https://new.wf.mail.ru/news/1003755.html">Итоги второй недели Open Cup: Season XII</a>
+                            <a class="item" href="https://new.wf.mail.ru/news/1003753.html">Событие "Сезонные сборы"</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="block_layout">
+            <div id="block-menu-menu-menu-footer" class="block block-menu">
+
+
+                <ul class="menu"><li class="leaf first odd" id="menu69df1f85b0abbce850b5feb29bddcb2a"><a href="https://new.wf.mail.ru/news/" title="">Новости</a></li>
+                    <li class="expanded odd" id="menuacf664b247822ae00651a97d44f5f4c0"><a href="https://new.wf.mail.ru/game/" title="">Об игре</a><ul class="menu"><li class="leaf first even" id="menue2da08d24d01a1973fc00aba221d51a1"><a href="https://new.wf.mail.ru/game/" title="">О Warface</a></li>
+                            <li class="leaf odd" id="menu5459b58a24e9fbb7166498474b5b54bf"><a href="https://new.wf.mail.ru/download/" title="">Скачать игру</a></li>
+                            <li class="leaf even" id="menu2c240f2a75c20dd8304f77fc55b4e21a"><a href="https://new.wf.mail.ru/guide/" title="">Новому игроку</a></li>
+                            <li class="leaf odd" id="menuc24797c4abfb4ebe54dc45b9e411ac3a"><a href="https://new.wf.mail.ru/media/" title="">Медиа</a></li>
+                            <li class="leaf last even" id="menu69549656be8d6b5965dca95b869512ec"><a href="https://new.wf.mail.ru/top/" title="">Рейтинги</a></li>
+                        </ul></li>
+                    <li class="expanded odd" id="menu3f37694eebbafa5705a6b637fadc169c"><a href="https://esports.mail.ru/game/wf" title="">ESports</a><ul class="menu"><li class="leaf first even" id="menub779f7b65b3151acde7757b8da246013"><a href="https://wf.mail.ru/promo/ocseason12" title="">Open Cup: Season XII</a></li>
+                            <li class="leaf odd" id="menuce66da51a641e4ab2339bc7d491414b9"><a href="https://esports.mail.ru/tournament/296/" title="">Challenge Cup</a></li>
+                            <li class="leaf even" id="menu16fe63194c32af1ccac6d8b317012234"><a href="https://esports.mail.ru/tournament/299/" title="">Masters League</a></li>
+                            <li class="leaf odd" id="menu18d1e86a1cf83125e276e180f0de1cee"><a href="https://esports.mail.ru/tournament/263/table" title="">Pro League</a></li>
+                            <li class="leaf last even" id="menu37307aba0ac427becb92c9ae57ae0e09"><a href="https://esports.mail.ru/game/wf" title="">Все турниры</a></li>
+                        </ul></li>
+                    <li class="expanded even" id="menu3e5d53ad868231660799b4c559ea5211"><a href="https://new.wf.mail.ru/community/" title="">Общение</a><ul class="menu"><li class="leaf first even" id="menu67b67f0bad308311c5a6f1d33df1fc17"><a href="https://wf.mail.ru/forums/ " title="">Форум</a></li>
+                            <li class="leaf last odd" id="menuea2516f035d007d556e0cf355a9d6013"><a href="https://new.wf.mail.ru/community/" title="">Социальные сети</a></li>
+                        </ul></li>
+                    <li class="expanded last even" id="menud54b7ba27571a2f00b38ed9273b974f2"><a href="https://wf.mail.ru/wiki/" title="">Wiki</a><ul class="menu"><li class="leaf first last odd" id="menu6d8365a5856fcd224e28b1a84f008071"><a href="https://new.wf.mail.ru/documents/" title="">Документы</a></li>
+                        </ul></li>
+                </ul>
+<!--LiveInternet counter--><script type="text/javascript">
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t38.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='31' height='31'><\/a>")
+</script><!--/LiveInternet-->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter47663746 = new Ya.Metrika({
+                    id:47663746,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/47663746" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+            </div>
+            <div id="block-block-68" class="block block-block">
+
+
+                <div class="logos">
+                    <a class="logos_item" href="http://www.crytek.com" target="_blank">
+                        <img alt="Crytek" src="/assets/_img/logo-crytek.png">
+                    </a>
+                    <a class="logos_item" href="https://www.cryengine.com" target="_blank">
+                        <img alt="Cry Engine" src="/assets/_img/logo-cryengine.png">
+                    </a>
+                    <a class="logos_item" href="https://mail.ru/" target="_blank">
+                        <img alt="Mail.Ru" src="/assets/_img/logo-mail.png">
+                    </a>
+                </div>
+
+            </div>
+            <div id="block-block-69" class="block block-block">
+
+
+                <div class="footer_text">
+                    <p>
+                        © <script>document.write(new Date().getFullYear())</script> Crytek GmbH ('Crytek').
+                        All Rights Reserved. Crytek, CryENGINE, Warface and the Warface logo are registered trademarks or trademarks of Crytek GmbH in Russia and/or other countries.<br>
+                        © <script>document.write(new Date().getFullYear())</script> Mail.Ru Games. All Rights Reserved. Powered by Mail.Ru
+                    </p>
+                </div>
+
+                <span class="age"><img src="/assets/_img/ico12.png" alt="12+"></span>
+
+
+
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+ <script src="/assets/_js/regform.js"></script>
+
+<script>
+    $.event.trigger({type: "canLoad"});
+</script>
+
+</body>
+</html>
