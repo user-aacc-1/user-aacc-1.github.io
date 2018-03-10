@@ -1,13 +1,17 @@
-<script>
-function makeid() {
-  var text = "";
-  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+<html>
+  
+<input type="checkbox" value="0" id="chars" class="innerVars"><span>Строчные латинские буквы</span>
 
-  for (var i = 0; i < 5; i++)
-    text += possible.charAt(Math.floor(Math.random() * possible.length));
+<input type="checkbox" value="1" id="bigChars" class="innerVars"><span>Заглавные латинские буквы</span>
 
-  return text;
-}
+<input type="checkbox" value="2" id="numChars" class="innerVars">Цифры (0-9)
 
-console.log(makeid());
-</script>
+<input type="checkbox" value="3" id="specChars" class="innerVars"><span>Спец символы (!@#$%^&amp;*()_-&lt;&gt;,.[]{};:№?)</span>
+
+<input type="text" id="countsymb"><span>Количество символов</span>
+
+<input type="text" id="countpwd"><span>Количество паролей</span>
+
+<input type="button" id="generate" value="Сгенерировать">
+  
+</html>
