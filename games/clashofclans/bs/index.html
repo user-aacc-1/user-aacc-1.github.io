@@ -7,17 +7,40 @@
   <title>Главная/Новости</title>
 <style>
 
-table {
-    border: 4px double #333; /* Рамка вокруг таблицы */ 
-    border-collapse: separate; /* Способ отображения границы */ 
-    width: 30%; /* Ширина таблицы*/ 
-    height: 120px;
-    border-spacing: 7px 11px; /* Расстояние между ячейками */ 
-   }
-   td {
-    padding: 5px; /* Поля вокруг текста */ 
-    border: 1px solid #fff; /* Граница вокруг ячеек */ 
-   } 
+* {box-sizing: border-box; margin: 0;}
+.widget {
+  padding: 20px 30px;
+  background: white;
+  font-family: 'Roboto', sans-serif;
+}
+.widget-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222;
+  font-size: 16px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border-left: 2px solid #b99d61;
+}
+.widget-list {
+  padding: 0;
+  list-style: none;
+}
+.widget-list a:before {
+  content: "\2014";
+  margin-right: 14px;
+}
+.widget-list a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  padding: 6px 0; 
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #444;
+  transition: .3s linear;
+}
+.widget-list a:hover {color: #b99d61;}
 a { 
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
    } 
@@ -39,9 +62,13 @@ a {
 </nav>
 
 </header>
- <div id="content">
+ 
 <h3><strong>Базы для обычной деревни</strong></h3>
-
+ 
+   <div class="widget">
+  <h3 class="widget-title">Категории</h3>
+  <ul class="widget-list">
+   
 <a href="http://guidesforgames.ml/games/clashofclans/bs/th3">Ратушка 3</a>
 <a href="http://guidesforgames.ml/games/clashofclans/bs/th4">Ратушка 4</a> 
 <a href="http://guidesforgames.ml/games/clashofclans/bs/th5">Ратушка 5</a> 
@@ -51,14 +78,28 @@ a {
 <a href="http://guidesforgames.ml/games/clashofclans/bs/th9">Ратушка 9</a> 
 <a href="http://guidesforgames.ml/games/clashofclans/bs/th10">Ратушка 10</a> 
 <a href="http://guidesforgames.ml/games/clashofclans/bs/th11">Ратушка 11</a> 
+   
+    </ul>
+</div>   
 
 <h3><strong>Базы для деревни строителя</strong></h3>
+   
+   <div class="widget">
+  <h3 class="widget-title">Категории</h3>
+  <ul class="widget-list">
 
 <a href="http://guidesforgames.ml/games/clashofclans/bs/bh3">Дом строителя 3</a>
 <a href="http://guidesforgames.ml/games/clashofclans/bs/bh4">Дом строителя 4</a> 
 <a href="http://guidesforgames.ml/games/clashofclans/bs/bh5">Дом строителя 5</a> 
+   
+   </ul>
+</div>
 
 <h3><strong>Базы для Клановых Войн</strong></h3>
+   
+   <div class="widget">
+  <h3 class="widget-title">Категории</h3>
+  <ul class="widget-list">
 
 <a href="http://guidesforgames.ml/games/clashofclans/bs/cw-th3">Ратушка 3</a>
 <a href="http://guidesforgames.ml/games/clashofclans/bs/cw-th4">Ратушка 4</a> 
@@ -70,7 +111,9 @@ a {
 <a href="http://guidesforgames.ml/games/clashofclans/bs/cw-th10">Ратушка 10</a> 
 <a href="http://guidesforgames.ml/games/clashofclans/bs/cw-th11">Ратушка 11</a> 
 
-  </div>
+  </ul>
+</div>
+   
   <footer>
     &copy; AACC.ml
   </footer>
