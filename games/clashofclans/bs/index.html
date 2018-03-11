@@ -7,33 +7,43 @@
   <title>Главная/Новости</title>
 <style>
 
- ul#my_menu {
-list-style-type: none; 
-margin: 0; 
-padding: 0;
+body {
+    padding: 10px;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
-ul#my_menu li a{
-	color: White; 
-	background: url(images/vert_css_menu_0.png) no-repeat 0 0; 
-	text-decoration: none; 
-	width: 200px;
-	height: 43px;
-	display: block;
-	border: none;
+.main-menu {
+    width: 180px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-ul#my_menu li a:hover{
-	background: url(images/vert_css_menu_1.png) no-repeat 0 0;
-	width: 200px;
-	height: 43px;
-	color: White; 
+.main-menu a {
+    display: block;
+    margin-bottom: -1px;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #0088cc;
+    border: 1px solid #e5e5e5;
 }
 
-ul#my_menu li a span{
-	font-size: 18px; 
-	padding: 10px 0 0 22px;
-	display: block;	
+.main-menu a:hover {
+    background: #f5f5f5;
+}
+
+.main-menu > li {
+}
+
+/* Подменю */
+
+.main-menu .sub-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fcf8e3;
 }
  
 a { 
@@ -60,7 +70,7 @@ a {
  
 <h3><strong>Базы для обычной деревни</strong></h3>
  
-  <ul id="my_menu">
+     <ul class="main-menu">
    
 <li><a href="http://guidesforgames.ml/games/clashofclans/bs/th3">Ратушка 3</a></li>
 <li><a href="http://guidesforgames.ml/games/clashofclans/bs/th4">Ратушка 4</a> </li>
@@ -77,7 +87,7 @@ a {
 
 <h3><strong>Базы для деревни строителя</strong></h3>
    
- <ul id="my_menu">
+    <ul class="main-menu">
 
 <li><a href="http://guidesforgames.ml/games/clashofclans/bs/bh3">Дом строителя 3</a> </li>
 <li><a href="http://guidesforgames.ml/games/clashofclans/bs/bh4">Дом строителя 4</a> </li>
@@ -88,7 +98,7 @@ a {
 
 <h3><strong>Базы для Клановых Войн</strong></h3>
    
-   <ul id="my_menu">
+      <ul class="main-menu">
 
 <li><a href="http://guidesforgames.ml/games/clashofclans/bs/cw-th3">Ратушка 3</a></li>
 <li><a href="http://guidesforgames.ml/games/clashofclans/bs/cw-th4">Ратушка 4</a> </li>
